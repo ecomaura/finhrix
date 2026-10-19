@@ -76,6 +76,8 @@ footer{background:#0a1320;color:#a9b5c2;padding:64px 0 28px}footer h3{color:#fff
 .rv{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv,.hero .in>*{opacity:1;transform:none}.dash .ln{stroke-dashoffset:0}}
 .atabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.ad{border:1px solid var(--ln);background:#fff;margin-bottom:10px}.ad summary{padding:14px 16px;font-weight:700;cursor:pointer}.ad .b{padding:0 16px 16px}.af{margin-bottom:12px}.ag{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+/* mobile overflow fix: let grid/flex children shrink */
+html{overflow-x:hidden}main *,footer *,header *{min-width:0}.burger{flex:none}img,svg,video,iframe{max-width:100%}
 </style></head><body>
 <a href="#main" class="btn sm" style="position:absolute;left:-999px;z-index:99" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to content</a>
 <header><div class="wrap"><a class="logo" href="#/" aria-label="Finhrix home"><img id="logoimg" alt="Finhrix" style="display:none" onerror="this.style.display='none';document.getElementById('lt').style.display=''"><span id="lt">Fin<b>hrix</b></span></a>
